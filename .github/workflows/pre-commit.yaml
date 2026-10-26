@@ -10,7 +10,7 @@ on:
           
 jobs:
   pre-commit-check:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, x64]
     environment: pre-commit
     steps:
     - name: Checkout Source Code
